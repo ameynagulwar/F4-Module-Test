@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color:rgba(245, 245, 245, 1);
+    /* color: white; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .navbar{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    background-color: rgba(240, 90, 34, 1);
+    color: white;
+    z-index: 20;
+    filter: drop-shadow(4px 14px 24px 0px);
+  }
+  
+  
+  .container{
+    margin: 28px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px 20px;
+  }
+  
+  .card{
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    row-gap: 8px;
+    padding: 6px 6px 10px 6px;
+    box-shadow: 0 0 6px rgb(99, 99, 99);
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+    border-radius: 15px;
+    position: relative;
+  }
+  
+  .card span{
+    font-style: italic;
+  }
+  
+  .card:hover{
+    transform: scale(1.05) rotateZ(1deg);
+  }
+  
+  
+  .details{
+    color: black;
+    margin-left: 15px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+
+ .data-details{
+     flex-basis: 60%;
+  }
+  
+  .details img{
+    width: 70%;
+  }
+
+  .details h1{
+    margin-bottom: 15px;
+  }
+  
+  .details p{
+    padding: 10px 0;
+  }
+  
+  .details strong{
+    font-size: 1.11rem;
+  }
+
+  .deta{
+    margin-top:  80px;
+    margin-right: 40px;
+  }
+
+  .btn > button{
+    margin-right: 20px;
+  }
+
+  .details-btn{
+    width: 75px;
+    height: 25px;
+    border: none;
+    background-color:rgba(240, 90, 34, 1);
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .userinfo-btn{
+   width: 100px;
+   height: 25px;
+   border: none;
+   background-color: white;
+   border-radius: 10px;
+   color: black;
+  }
+
+  .error{
+    margin: 10rem auto;
+    background-color: rgba(255, 20, 20, 0.692);
+    box-shadow: 0 0 22px rgba(255, 0, 0, 0.863), 0 0 5px rgba(255, 255, 255, 0.651),0 0 8px rgba(255, 0, 0, 0.61);
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .error h1{
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .lost{
+    margin: 11.25rem 10% ;
+    padding: 1.25rem;
+  
+  }
+  
+  .lost h1{
+    color: rgb(247, 196, 31);
+    font-size: 2.4rem;
+  }
+  
+  .lost .backButton{
+    display: inline-block;
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(29, 29, 29);
+    margin: 1.5rem auto;
+    padding: 0.5rem 1.25rem;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+  }
+  
+  .lost .backButton:hover{
+    transform: translateX(-10px);
+  }
+  
+  
+  .load-holder{
+    height: 80dvh;
+    width: 90dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .load{
+    height: 100px;
+    width: 100px;
+    border-bottom: 5px solid white;
+    border-left: 5px solid white;
+    border-radius: 50%;
+    animation: spin 2s linear infinite ;
+  }
+  
+  @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+  }
+
+.logo{
+  position: absolute;
+  width: 431px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  top: 15px;
+  left: 600px;
+}
+
+.logo > a{
+  margin: 10px;
+}
+
+#img{
+  margin-top: 20px;
+}
+
+#img2{
+  margin-right: 20px;
+}
+
+.images{
+  width: 362px;
+  height: 200px;
+  padding: 10px;
+}
+
+.card > img{
+  border-radius: 10px;
+}
+
+.card-details{
+  display: flex;
+  flex-direction: row;
+}
+
+.data{
+  margin: 10px;
+}
+
+#heading{
+  color: black;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+#search{
+  width: 100%;
+  margin-left: 77px;
+  margin-right: 77px;
+}
+
+#header{
+  width: 100%;
+  margin-left: 77px;
+}
+
+#search > input{
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+}
+
+#search > input::placeholder{
+  padding-left: 10px;
+}
+
